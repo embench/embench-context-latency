@@ -17,7 +17,7 @@ End measurement point depends on `mtvec` mode:
 Start measurement point: when interrupts are enabled (`mstatus`) and the configured external interrupt enabled.
 End measurement point: isr entry
 
-Read `mcycle` and `mcycleh` counters is done to core registers `t5` and `t6` (it is assumed they are not used in the said flow)
+Read `mcycle` and `mcycleh` counters are done to core registers `t5` and `t6` (it is assumed they are not used in the said flow)
 
 ### Benchmark flow
 1. Measure the amount of cycles cost of overhead code (how much does it cost to measure)
