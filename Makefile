@@ -132,8 +132,10 @@ GDB_RUN_CMDS_irq_latency += -ex "set mem inaccessible-by-default off"
 GDB_RUN_CMDS_irq_latency += -ex "set remotetimeout 250"
 GDB_RUN_CMDS_irq_latency += -ex "set arch riscv:rv32"
 GDB_RUN_CMDS_irq_latency += -ex "load"
+# OpenOCD will execute Fence + Fence.i when resuming
+# the processor from the debug mode. This is needed for proper operation
+# of SW breakpoints with ICACHE
 GDB_RUN_CMDS_irq_latency += -ex "si"
-GDB_RUN_CMDS_irq_latency += -ex "b int-latency.c:189"
 GDB_RUN_CMDS_irq_latency += -ex "c"
 GDB_RUN_CMDS_irq_latency += -ex 'printf "\n" '
 GDB_RUN_CMDS_irq_latency += -ex 'printf "\n" '
