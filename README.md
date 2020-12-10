@@ -33,3 +33,7 @@ Supported hardware
 * E31 - SiFive RV32IMACU
 
    Coming soon ...
+
+* EH1 - WDC RV32IMC
+
+   https://github.com/chipsalliance/Cores-SweRVolf
