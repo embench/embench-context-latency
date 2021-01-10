@@ -1,35 +1,12 @@
 # Embench Context Switch and Interrupt Benchmark
 
-Micro-benchmark for embedded systems to characterize their behavior in respect
-of context switching speed and interrupt latency.
+The work of this project is now transferred to the
+[embench-rt](https://github.com/embench/embench-rt) repository.  Embench
+benchmarks are now named for the market sector they address, rather than the
+technology they are based on.
 
-This work is led by Cesare Garlati (@cgarlati).
+Although all files were removed from this repository in its final commit, the
+history is preserved both in this repository and (more usefully) in the the
+[embench-rt](https://github.com/embench/embench-rt) repository.
 
-Hex Five's test cases for eventualy inclusion in David Patterson's Embench
-project https://github.com/embench
-
-* ctx_switch
-
-   Measure the context switch performance of a typical embedded microkernel.
-
-* irq_latency
-
-   Coming soon ...
-
-* crypto
-
-   Coming soon ...
-
-Supported hardware
-
-* X300 - Hex Five RV32IMACU (Modified Freedom E300 Rocket)
-
-   https://github.com/hex-five/multizone-fpga
-
-* N25 - Andes Technology RV32IMAC
-
-   Coming soon ...
-
-* E31 - SiFive RV32IMACU
-
-   Coming soon ...
+This benchmark is now archived.
